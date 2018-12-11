@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teste de eventos 2</title>
+        <meta charset="UTF-8">
+        <style>
+            tbody >tr:hover{
+                background-color: #ccc
+            }
+            .link{
+                color: red
+            }
+            .tractive{
+                color: blue
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#" id="link">
+            <h1>Olá Humanos</h1>
+        </a>
+        <table style="width: 100%">
+            <thead>
+                <th align="left">Nome</th>
+                <th align="left">idade</th>
+            </thead>
+            <tbody>
+                <tr class="tr">
+                    <td style="height: 30px">Alien</td>
+                    <td style="height: 30px">2000</td>
+                </tr>
+                <tr class="tr">
+                    <td style="height: 30px">Bixo Papão</td>
+                    <td style="height: 30px">1000</td>
+                </tr>
+            </tbody>
+        </table>
+        <script>
+            var link = document.getElementById("link")
+            var trs = document.getElementsByClassName("tr")
+            link.addEventListener("mouseover", function(){
+                link.classList.add("link")
+            })
+            link.addEventListener("mouseleave", function(){
+                link.classList.remove("link")
+                for(var i = 0; i < trs.length; i++){
+                    trs[i].addEventListener("mouseover", function(){
+                        this.classList.add("tractive")
+                    })
+                    trs[i].addEventListener("mouseleave", function(){
+                        this.classList.remove("tractive")
+                    })
+                }
+            })
+        </script>
+    </body>
+</html>

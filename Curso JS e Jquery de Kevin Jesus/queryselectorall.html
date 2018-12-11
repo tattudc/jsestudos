@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>getElementBy id</title>
+        <meta charset="UTF-8">
+    </head>
+    
+    <body>
+        <div class="teste">1</div>
+        <div class="teste">2</div>
+        <div class="teste">3</div>
+        <div id="pai">
+            <div class="filho">1</div>
+            <div class="filho">2</div>
+            <div class="filho">3</div>
+        </div>
+        
+        <p>Oi</p>
+        <p>Olá</p>
+            
+        <script>
+            console.log(
+                document.querySelectorAll(".teste")
+            )
+            console.log(
+                document.getElementById("pai").querySelectorAll(".filho")[0].innerHTML
+            )
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Teste de eventos</title>
+    </head>
+    <body>
+        <h2 id="title">Texto</h2>
+        <button id="clicado">Clique aqui</button>
+        <script>
+            window.onload = function(){
+                console.log("Página carregada")
+                alert("Página Carregada")
+            }
+            var botao = document.getElementById("clicado")
+            botao.addEventListener("click", function(){
+                console.log("Click")
+                title.remove()   
+            })
+        </script>
+    </body>
+</html>
