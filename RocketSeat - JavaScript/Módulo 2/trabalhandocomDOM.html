@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Eventos Inside - JS</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div id="app">
+			<input type="text" name="nome" />
+			<button class="botao">Adicionar</button>
+		</div>
+		
+		<script>
+			//var inputElement = document.getElementById("app")
+			//var inputElement = document.getElementsByTagName("input")
+			//var inputElement = document.getElementsByClassName("botao")
+			//var inputElement = document.querySelector("body div#app input")
+			//Para manipular os elementos a partir de classes e Ids usa-se o JS
+			var inputElement = document.querySelector("input[name=nome]");
+			var btnElement = document.querySelector("button.botao");
+			
+			btnElement.onclick = function(){
+				var text = inputElement.value;
+				alert(text);
+			}
+			</script>
+	</body>
+</html>
