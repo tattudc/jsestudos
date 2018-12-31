@@ -10,3 +10,7 @@
 4 - React Native. Curso ministrado na Udemy pelo professor: Leonardo Moura
 
 5 - Vue JS 2. Curso ministrado na Udemy pelo professor: Maximillian Schwarzmuller
+
+6 - Curso JS e Jquery com Kevin Jesus
+
+7 - JS da Rocketseat
