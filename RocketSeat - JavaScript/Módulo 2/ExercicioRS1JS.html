@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Curso JavaScript</title>
+	</head>
+	<body>
+		<div id="App">
+			<button id="botao">Criar Quadrado</button>
+			<div id="box"></box>
+		</div>
+		
+		<script>
+			//Criar botao que ao ser chamado cria um quadrado vermelho
+			var btnElement = document.getElementById('botao');
+			var boxElement = document.getElementById('box');
+			
+			btnElement.onclick = function(){
+			var rect = document.createElement('div');
+			
+			rect.style.width = '100px';
+			rect.style.height = '100px';
+			rect.style.backgroundColor = '#f00';
+			
+			boxElement.appendChild(rect);
+			};
+			
+		
+		</script>
+	</body>
+</html>
