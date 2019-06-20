@@ -14,3 +14,7 @@
 6 - Curso JS e Jquery com Kevin Jesus
 
 7 - JS da Rocketseat
+
+8 - HTML5 e CSS3 da innovation one
+
+9 - JS da innovation one
