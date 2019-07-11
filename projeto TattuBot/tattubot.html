@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Page Title</title>
+        <meta charset="utf-8">
+    </head>
+	
+    <body>
+	<!-- Simples caixas de dialogo entre bot e user-->
+    <h1>TATTUBOT</h1>
+    <p>Para comandos digite 'help' no seu text box e clique em enviar!</p>
+    <h3>BOT</h3>
+    <img src="https://thumbs.gfycat.com/UnripeAdoredGrayreefshark-max-1mb.gif" height=50px width= 50px><br />
+    <input type="textbox" id="botText" style="width:300px"><br>
+    <h3>YOU</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRW_tKkMP1PJjt1siIKqlrcl3UUXatu5LPZf9m6ASctDjVaFF1X" height= 50px width= 50px><br>
+    <input type="textbox" id="youText" style="width:300px"><br><br>
+    <button onclick="botInicio()">Enviar</button><br>
+    <h5>ÚLTIMO COMANDO</h5>
+    <p id='ultMsg'></p>
+    
+    
+    <script>
+        let nomeUser = "Usuário"
+        alert("Este é o Tattubot para saber os comandos envie um help")
+        
+        //começo das funções
+        function botInicio(){
+        if(youText.value == "ola"){
+        //ola comando
+        nomeUser = prompt("TattuBot: Olá! Qual é o seu nome? ")
+        alert("Olá "+ nomeUser)
+        botText.value = "Olá" + nomeUser
+        var element = document.getElementById('ultMsg'); 
+        ultMsg.innerHTML = '<b>ola</b>'
+        }
+        else if(youText.value == "youtube"){
+        //youtube comando
+            window.open("http://www.youtube.com","_blank");
+            botText.value = "Acessando youtube"
+            var element = document.getElementById('ultMsg'); 
+            ultMsg.innerHTML = '<b>youtube</b>'
+        }
+         else if(youText.value == "facebook"){
+        //facebook comando
+            window.open("http://www.facebook.com","_blank");
+            botText.value = "Acessando facebook"
+            var element = document.getElementById('ultMsg'); 
+            ultMsg.innerHTML = '<b>facebook</b>'
+        }
+        else if(youText.value == "suap"){
+        //suap comando
+            
+            window.open("https://suap.ifrn.edu.br/accounts/login/?next=/","_blank");
+            botText.value = "Acessando suap"
+            var element = document.getElementById('ultMsg'); 
+            ultMsg.innerHTML = '<b>suap</b>'
+        }
+        else if(youText.value == "sigaa"){
+        //sigaa comando
+            window.open("https://autenticacao.ufrn.br/sso-server/login?service=https%3A%2F%2Fsigaa.ufrn.br%2Fsigaa%2Flogin%2Fcas","_blank");
+            botText.value = "Acessando sigaa"
+            var element = document.getElementById('ultMsg'); 
+            ultMsg.innerHTML = '<b>sigaa</b>'
+        }
+        else if(youText.value == "kravmaga"){
+        //sigaa comando
+            window.open("https://pt.wikipedia.org/wiki/Krav_magá","_blank");
+            botText.value = "Acessando Wikipédia sobre Krav Maga"
+            var element = document.getElementById('ultMsg'); 
+            ultMsg.innerHTML = '<b>kravmaga</b>'
+        }
+        else if(youText.value == "jogar"){
+            let randomBot = Math.floor((Math.random() * 3) + 1);
+            alert("Vamos jogar pedra, papel e tesoura:")
+            randomYou = prompt("Escolha:\n1 - Pedra\n2 - Papel\n3 - Tesoura")
+            if(randomYou == randomBot){
+                alert("Jogo empatado!! Você escolheu "+randomYou+" e o bot "+randomBot)
+            }
+            else if(randomYou == 1 && randomBot == 2){
+                alert("Bot ganhou! Você escolheu "+randomYou+" e o bot "+randomBot)
+            }
+            else if(randomYou == 1 && randomBot == 3){
+                alert("Você ganhou! Você escolheu "+randomYou+" e o bot "+randomBot)
+            }
+            else if(randomYou == 2 && randomBot == 1){
+                alert("Você ganhou! Você escolheu "+randomYou+" e o bot "+randomBot)
+            }
+            else if(randomYou == 2 && randomBot == 3){
+                alert("Bot ganhou! Você escolheu "+randomYou+" e o bot "+randomBot)
+            }
+            else if(randomYou == 3 && randomBot == 1){
+                alert("Bot ganhou! Você escolheu "+randomYou+" e o bot "+randomBot)
+            }
+            else if(randomYou == 3 && randomBot == 2){
+                alert("Você ganhou! Você escolheu "+randomYou+" e o bot "+randomBot)
+            }
+            else{
+                alert("Jogada errada!")
+            }
+            botText.value = "Jogando JoKenPo!"
+            var element = document.getElementById('ultMsg'); 
+            ultMsg.innerHTML = '<b>jogar</b>'
+        }
+        else if(youText.value == "bitcoin"){
+            //bitcoin comando
+            window.open("https://www.google.com/search?source=hp&ei=FSolXZuqBMns5gK6jp3QCw&q=preço+bitcoin&oq=preço+bitcoin&gs_l=psy-ab.3..0i131l3j0l7.64060.67351..67592...0.0..1.941.5172.2-7j1j2j2j1......0....1..gws-wiz.....0..35i39.uIpRomcEEIY","_blank");
+            botText.value = "Preço bitcoin!"
+            var element = document.getElementById('ultMsg'); 
+            ultMsg.innerHTML = '<b>bitcoin</b>'
+        }
+        else if(youText.value == "help"){
+        //help comando
+        alert("Lista de comandos: \nola\nhelp\nyoutube\nfacebook\nsuap\nsigaa\njogar\nbitcoin")
+        var element = document.getElementById('ultMsg'); 
+        ultMsg.innerHTML = '<b>help</b>'
+       }
+       else{
+        //comando inválido
+           botText.value = "Comando inválido!"
+       }
+        }
+    </script>
+        
+    </body>
+</html>
