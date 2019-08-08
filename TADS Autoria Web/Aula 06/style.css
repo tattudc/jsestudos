@@ -1,0 +1,47 @@
+p {
+	font-weight: bold;
+}
+/* Exemplo de pseudo class */
+p:hover {
+	background-color: red;
+}
+/* Exemplo de pseudo element */
+p::first-letter {
+	font-size: 50px;
+}
+p::first-line {
+	color: blue;
+}
+p::before {
+	content: "Paragráfo começa aqui...  ";
+}
+p::after {
+	content: " Tem muito texto aqui com o intuito de dar uma quebra de linha e mostrar a modificação... ";
+}
+nav {
+	border-bottom: 1px solid black;
+}
+nav ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+.menuitem {
+	display: inline-block;
+	font-size: 20px;
+}
+.menuitem a::after {
+	display: inline-block;
+	color: #000;
+	content: " | ";
+	font-weight: bold;
+	padding: 0 3px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+	color: blue;
+	text-decoration-color: #000;
+}
