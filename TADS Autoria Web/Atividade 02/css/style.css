@@ -25,17 +25,15 @@ p {
 	background-color: rgb(242, 237, 237);
 	padding-top: 0;
 	padding-bottom: 0;
-	padding-right: auto;
-	padding-left: auto;
 }
 .eajImg {
-	height: 70%;
-	width: 70%;
+	height: 80%;
+	width: 80%;
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: center;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 .textEajImg {
 	text-align: center;
@@ -64,4 +62,9 @@ p {
 	margin: auto;
 	text-align: center;
 	display: inline-block;
+}
+@media (max-width: 768px) {
+	.dispor {
+		display: flex;
+	}
 }
