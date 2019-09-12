@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Calcule seu IMC</h1>
+    <form class="form">
+        <fieldset>
+            <legend>Insira seus dados</legend>
+            <label for="peso">Peso (em Kg): </label>
+            <input type="number" id="peso" name="peso" step="0.1"><br>
+            <label for="altura">Altura (em m): </label>
+            <input type="number" id="altura" name="altura" step="0.01" max="2.5" min="1.0"><br>
+        </fieldset>
+    </form>
+    <button onclick="calcImc()">Calcular</button>
+    <div id="result"></div>
+    <div id="situacao"></div>
+    <script src="script.js"></script>
+</body>
+</html>
