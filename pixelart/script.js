@@ -18,16 +18,16 @@ function draw(){
     estado++;
 
     if(direcao == 0){walky += 2;}
-    if(direcao == 1){walky += 2;}
+    if(direcao == 1){walkx += 2;}
     if(direcao == 2){walky -= 2;}
-    if(direcao == 3){walky -= 2;}
+    if(direcao == 3){walkx -= 2;}
 
     if(estado == 4){
         estado = 0;
     }
 }
 
-let rungame = setInterval(draw, 100);
+let rungame = setInterval(draw, 1);
 document.addEventListener("keydown", movement);
 
 //Ajeitar movimento
@@ -38,7 +38,7 @@ function movement(event){
     }
     else if(event.keyCode == 38){
         //Down
-        direcao = 0;
+        direcao = 2;
     }
     else if(event.keyCode == 39){
         //left
@@ -46,6 +46,6 @@ function movement(event){
     }
     else if(event.keyCode == 40){
         //up
-        direcao = 2;
+        direcao = 0;
     }
 }
