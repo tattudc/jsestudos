@@ -1,0 +1,60 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	background-color: cornsilk;
+}
+
+.cabecalho,
+.interesses,
+h1,
+h2,
+h3,
+.disponib,
+.progress {
+	text-align: center;
+	width: 100%;
+}
+
+.interesses-ul,
+.progress {
+	list-style-type: none;
+}
+
+.tabela {
+	margin: auto;
+}
+
+.cont-iframe {
+	text-align: center;
+}
+
+.iframe {
+	width: 80%;
+	height: 450px;
+	text-align: center;
+}
+.footer {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.cabecalho,
+	.interesses,
+	h1,
+	h2,
+	h3,
+	.disponib,
+	.progress {
+		text-align: left;
+	}
+	.cabecalho {
+		display: flex;
+	}
+	.foto-per {
+		width: 250px;
+		height: 250px;
+	}
+	.tabela {
+		margin: 0;
+	}
+}
