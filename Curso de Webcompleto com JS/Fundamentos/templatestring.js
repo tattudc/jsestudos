@@ -1,7 +1,8 @@
 const nome = 'Rebeca'
 const concatenacao = 'Ola ' + nome + '!'
 const template = `
-Olá ${nome}!`
+    Olá 
+    ${nome}!` //Não usa aspas simples e sim o simbolo da crase
 console.log(concatenacao, template)
 
 //expressões..

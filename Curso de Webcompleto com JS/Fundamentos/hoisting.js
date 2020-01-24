@@ -3,6 +3,6 @@ console.log("a = ", a)
 var a = 2 //Se comentar da undefined em tudo
 console.log("a = ", a)
 //Se fizer uma função e não declarar ela fora da função, ela "iça" da função
-console.log("b = ", b)
+//console.log("b = ", b)
 let b = 3
 console.log("b = ", b)

@@ -16,3 +16,4 @@ function teste(){
 }
 
 teste()
+//console.log(local) a variavel local é local e não é visivel fora
